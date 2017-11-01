@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.patrik.skritkove.MainActivity">
+
+    <Button
+        android:id="@+id/MainButtonScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="26dp"
+        android:background="@mipmap/ic_launcher"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Nejvyšší skóre"
+        app:layout_constraintLeft_toLeftOf="@+id/MainButtonPlay"
+        app:layout_constraintTop_toBottomOf="@+id/MainButtonPlay" />
+
+    <Button
+        android:id="@+id/MainButtonOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="26dp"
+        android:background="@mipmap/ic_launcher"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Nastavení"
+        app:layout_constraintLeft_toLeftOf="@+id/MainButtonHelp"
+        app:layout_constraintTop_toBottomOf="@+id/MainButtonHelp" />
+
+    <Button
+        android:id="@+id/MainButtonHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="33dp"
+        android:background="@mipmap/ic_launcher"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Nápověda"
+        app:layout_constraintLeft_toLeftOf="@+id/MainButtonScore"
+        app:layout_constraintTop_toBottomOf="@+id/MainButtonScore" />
+
+    <Button
+        android:id="@+id/MainButtonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="26dp"
+        android:background="@mipmap/ic_launcher"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Hrát"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
