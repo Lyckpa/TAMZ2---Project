@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
                 startActivity(intent);
                 return true;
             }
-        });
+        });//
         MainButtonSetting.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
