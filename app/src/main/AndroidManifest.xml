@@ -4,13 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ikona"
         android:label="Skřítkové"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         <activity
             android:name=".MainActivity"
+            android:launchMode="singleTop"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +21,23 @@
         </activity>
         <activity
             android:name=".HelpActivity"
+            android:launchMode="singleTop"
             android:screenOrientation="landscape" />
-        <activity android:name=".SettingsActivity" android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".HighscoreActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".StoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity android:name=".GameActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

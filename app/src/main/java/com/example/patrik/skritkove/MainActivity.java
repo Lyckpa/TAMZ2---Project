@@ -11,6 +11,8 @@ public class MainActivity extends Activity {
 
     public Button MainButtonHelp;
     public Button MainButtonSetting;
+    public Button MainButtonHighscore;
+    public Button MainButtonPlay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +20,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         MainButtonHelp = (Button) findViewById(R.id.MainButtonHelp);
         MainButtonSetting = (Button) findViewById(R.id.MainButtonOption);
+        MainButtonHighscore = (Button) findViewById(R.id.MainButtonScore);
+        MainButtonPlay = (Button)findViewById(R.id.MainButtonPlay);
         MainButtonHelp.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -34,5 +38,22 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
+        MainButtonHighscore.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                Intent intent = new Intent(MainActivity.this, HighscoreActivity.class);
+                startActivity(intent);
+                return true;
+            }
+        });
+        MainButtonPlay.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                Intent intent = new Intent(MainActivity.this, StoryActivity.class);
+                startActivity(intent);
+                return true;
+            }
+        });
+
     }
 }
