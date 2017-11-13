@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-img {
-    display: block;
-    margin: 0 auto;
-}
-</style>
-</head>
-<body>
-
 <h1>Skřítkové</h1>
-<a href="https://ibb.co/eaWWCb"><img src="https://preview.ibb.co/cJNtQw/hl_menu.png" alt="hl_menu" border="0"></a><br>
+<a href="https://ibb.co/eaWWCb"><img src="https://preview.ibb.co/cJNtQw/hl_menu.png" alt="hl_menu" border="0" display="block" margin="0 auto"></a><br>
 Skřítkové potřebují vaší pomoc! Vašim úkolem je dostat před Vánocemi všechny skřítky zpět do skřítčí vesnice za jejich rodinami. Úkolem je dostat skřítků do vesnice co nejvíce skrz různě obtížné úrovně. Jakmile dojde ke zranění jediného skřítka, tak hra končí.
 
 <h5>Technické informace</h5>
@@ -24,7 +12,3 @@ Hra obsahuje 3 úrovně, zvuky, vibrace, vlákna, vykreslování hry je vytvoře
 <a href="https://ibb.co/huqf5w"><img src="https://preview.ibb.co/h1Ydsb/pravidla5.png" alt="pravidla5" border="0" width="320" height="180"></a>
 <a href="https://ibb.co/guiBCb"><img src="https://preview.ibb.co/jN3BCb/pravidla6.png" alt="pravidla6" border="0" width="320" height="180"></a>
 <a href="https://ibb.co/iJwysb"><img src="https://preview.ibb.co/nmGysb/23558198_1893205510719720_2041714176_o.png" alt="23558198_1893205510719720_2041714176_o" border="0" width="320" height="180"></a>
-
-
-</body>
-</html>
