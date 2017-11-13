@@ -1,4 +1,5 @@
 <h1>Skřítkové</h1>
+<a href="https://ibb.co/eaWWCb"><img src="https://preview.ibb.co/cJNtQw/hl_menu.png" alt="hl_menu" border="0"></a>
 Skřítkové potřebují vaší pomoc! Vašim úkolem je dostat před Vánocemi všechny skřítky zpět do skřítčí vesnice za jejich rodinami. Úkolem je dostat skřítků do vesnice co nejvíce skrz různě obtížné úrovně. Jakmile dojde ke zranění jediného skřítka, tak hra končí.
 
 <h5>Technické informace</h5>
