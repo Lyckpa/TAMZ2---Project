@@ -8,13 +8,6 @@
     android:orientation="horizontal"
     tools:context="com.example.patrik.skritkove.GameActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:text="Button"
-        android:textSize="10sp" />
-
     <com.example.patrik.skritkove.GameEngine
         android:id="@+id/gameEngine"
         android:layout_width="match_parent"

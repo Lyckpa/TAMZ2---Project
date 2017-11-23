@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -30,14 +32,19 @@ public class HighscoreActivity extends Activity {
         String[] from = new String[] {"name", "score"};
         int[] to = new int[] {R.id.highscoreItemName, R.id.highscoreItemScore};
         List<HashMap<String, String>> fillMaps = new ArrayList<HashMap<String, String>>();
-        for(int i = 0; i < 10; i++)
-        {
-            HashMap<String,String> map = new HashMap<String, String>();
-            map.put("name", "Level 1 Name" + i);
-            map.put("score", "0");
-            fillMaps.add(map);
-        }
+        try(BufferedReader br = new BufferedReader(new FileReader(getFilesDir() + "/" + "score1.csv"))) {
+            for (int i = 0; i < 10; i++) {
+                String[] tmp = br.readLine().split(";");
+                HashMap<String, String> map = new HashMap<String, String>();
+                map.put("name", tmp[0]);
+                map.put("score", tmp[1]);
+                fillMaps.add(map);
+            }
 
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
         SimpleAdapter adapter = new SimpleAdapter(this, fillMaps, R.layout.item_highscore, from, to);
         highscore.setAdapter(adapter);
 
@@ -47,14 +54,20 @@ public class HighscoreActivity extends Activity {
                 String[] from = new String[] {"name", "score"};
                 int[] to = new int[] {R.id.highscoreItemName, R.id.highscoreItemScore};
                 List<HashMap<String, String>> fillMaps = new ArrayList<HashMap<String, String>>();
-                for(int i = 0; i < 10; i++)
-                {
-                    HashMap<String,String> map = new HashMap<String, String>();
-                    map.put("name", "Level 1 Name" + i);
-                    map.put("score", "0");
-                    fillMaps.add(map);
-                }
 
+                try(BufferedReader br = new BufferedReader(new FileReader(getFilesDir() + "/" + "score1.csv"))) {
+                    for (int i = 0; i < 10; i++) {
+                        String[] tmp = br.readLine().split(";");
+                        HashMap<String, String> map = new HashMap<String, String>();
+                        map.put("name", tmp[0]);
+                        map.put("score", tmp[1]);
+                        fillMaps.add(map);
+                    }
+
+                }catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
                 SimpleAdapter adapter = new SimpleAdapter(getBaseContext(), fillMaps, R.layout.item_highscore, from, to);
                 highscore.setAdapter(adapter);
                 return true;
@@ -66,14 +79,19 @@ public class HighscoreActivity extends Activity {
                 String[] from = new String[] {"name", "score"};
                 int[] to = new int[] {R.id.highscoreItemName, R.id.highscoreItemScore};
                 List<HashMap<String, String>> fillMaps = new ArrayList<HashMap<String, String>>();
-                for(int i = 0; i < 10; i++)
-                {
-                    HashMap<String,String> map = new HashMap<String, String>();
-                    map.put("name", "Level 2 Name" + i);
-                    map.put("score", "0");
-                    fillMaps.add(map);
-                }
+                try(BufferedReader br = new BufferedReader(new FileReader(getFilesDir() + "/" + "score2.csv"))) {
+                    for (int i = 0; i < 10; i++) {
+                        String[] tmp = br.readLine().split(";");
+                        HashMap<String, String> map = new HashMap<String, String>();
+                        map.put("name", tmp[0]);
+                        map.put("score", tmp[1]);
+                        fillMaps.add(map);
+                    }
 
+                }catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
                 SimpleAdapter adapter = new SimpleAdapter(getBaseContext(), fillMaps, R.layout.item_highscore, from, to);
                 highscore.setAdapter(adapter);
                 return true;
@@ -85,14 +103,19 @@ public class HighscoreActivity extends Activity {
                 String[] from = new String[] {"name", "score"};
                 int[] to = new int[] {R.id.highscoreItemName, R.id.highscoreItemScore};
                 List<HashMap<String, String>> fillMaps = new ArrayList<HashMap<String, String>>();
-                for(int i = 0; i < 10; i++)
-                {
-                    HashMap<String,String> map = new HashMap<String, String>();
-                    map.put("name", "Level 3 Name" + i);
-                    map.put("score", "0");
-                    fillMaps.add(map);
-                }
+                try(BufferedReader br = new BufferedReader(new FileReader(getFilesDir() + "/" + "score3.csv"))) {
+                    for (int i = 0; i < 10; i++) {
+                        String[] tmp = br.readLine().split(";");
+                        HashMap<String, String> map = new HashMap<String, String>();
+                        map.put("name", tmp[0]);
+                        map.put("score", tmp[1]);
+                        fillMaps.add(map);
+                    }
 
+                }catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
                 SimpleAdapter adapter = new SimpleAdapter(getBaseContext(), fillMaps, R.layout.item_highscore, from, to);
                 highscore.setAdapter(adapter);
                 return true;

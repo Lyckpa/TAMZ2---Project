@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
@@ -7,18 +8,22 @@
         android:id="@+id/highscoreItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
         android:layout_weight="1"
+        android:gravity="left"
         android:text="TextView"
         android:textColor="@android:color/black"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/highscoreItemScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
         android:layout_weight="1"
+        android:gravity="right"
         android:text="TextView"
         android:textColor="@android:color/black"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
 </LinearLayout>

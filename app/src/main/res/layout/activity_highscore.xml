@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pozadi_aktivita"
+    android:background="@drawable/pozadi_highscore"
     android:orientation="horizontal"
     tools:context="com.example.patrik.skritkove.HighscoreActivity"
     tools:layout_editor_absoluteX="0dp"
@@ -18,35 +18,40 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/HighscoreButtonLevel1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="100dp"
                 android:layout_weight="1"
-                android:text="Level 1"
+                android:background="@drawable/level1"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="8dp" />
 
             <Button
                 android:id="@+id/HighscoreButtonLevel2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:text="Level 2"
+                android:background="@drawable/level2"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="64dp" />
 
             <Button
                 android:id="@+id/HighscoreButtonLevel3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:text="Level 3"
+                android:background="@drawable/level3"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="120dp" />
 
@@ -56,7 +61,9 @@
             android:id="@+id/highscoreList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="40dp"
             android:layout_weight="1"
             android:headerDividersEnabled="false"
             tools:layout_editor_absoluteX="0dp"

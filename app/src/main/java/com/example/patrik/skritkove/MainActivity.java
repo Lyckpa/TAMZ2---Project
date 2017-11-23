@@ -7,6 +7,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.File;
+import java.io.PrintWriter;
+
 public class MainActivity extends Activity {
 
     public Button MainButtonHelp;
@@ -18,6 +21,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        createHighscore();
         MainButtonHelp = (Button) findViewById(R.id.MainButtonHelp);
         MainButtonSetting = (Button) findViewById(R.id.MainButtonOption);
         MainButtonHighscore = (Button) findViewById(R.id.MainButtonScore);
@@ -55,5 +59,56 @@ public class MainActivity extends Activity {
             }
         });
 
+    }
+
+    private void createHighscore()
+    {
+        File file1 = new File(getFilesDir() + "/" + "score1.csv");
+        File file2 = new File(getFilesDir() + "/" + "score2.csv");
+        File file3 = new File(getFilesDir() + "/" + "score3.csv");
+        File options = new File(getFilesDir() + "/" + "options.csv");
+        if(!file1.exists())
+        {
+            try (PrintWriter pw = new PrintWriter(getFilesDir() + "/" + "score1.csv")) {
+                for(int i = 0; i < 10; i++)
+                    pw.println("---;0");
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        if(!file2.exists())
+        {
+            try (PrintWriter pw = new PrintWriter(getFilesDir() + "/" + "score2.csv")) {
+                for(int i = 0; i < 10; i++)
+                    pw.println("---;0");
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        if(!file3.exists())
+        {
+            try (PrintWriter pw = new PrintWriter(getFilesDir() + "/" + "score3.csv")) {
+                for(int i = 0; i < 10; i++)
+                    pw.println("---;0");
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        if(!options.exists())
+        {
+            try (PrintWriter pw = new PrintWriter(getFilesDir() + "/" + "options.csv")) {
+                    pw.println("1;1;1;1;");
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
     }
 }
